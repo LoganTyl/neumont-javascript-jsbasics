@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    div(id="orderFormDiv")
+        form(method="post" action="/submitted" onsubmit="return checkSubmission()" class="orderForm")
+            each item in featuresList.list
+                p(id=item[0]) #{item[0]} Amount:&nbsp;
+                    input(type="number" name=item[3])
+            br
+            p Full name:&nbsp;
+                input(type=text name="name" id="nameInput")
+                br
+            p Address:&nbsp;
+                input(type=text name="address" id="addressInput")
+                br
+            p Phone Number:&nbsp;
+                input(type=text name="phoneNum" id="phoneNumInput")
+                br
+            p Email:&nbsp;
+                input(type=text name="email" id="emailInput")
+                br
+            input(type="submit" value="Submit" id="submitBtn")

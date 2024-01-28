@@ -1,0 +1,13 @@
+doctype html
+html
+    head
+        link(href='/style.css' rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet")
+    body
+        div(id="main")
+            title #{title}
+            h1 #{title}
+            block content
+        script(src="/avatar.js")
+        script(src="/backend.js")

@@ -1,0 +1,9 @@
+{
+    "list": [
+        ["Potion", "../potion.png", "200", "potionAmt"],
+        ["Full Heal", "../full_heal.png", "600", "fullHealAmt"],
+        ["Ultra Ball", "../ultra_ball.png", "1200", "ultraBallAmt"],
+        ["Revive", "../revive.png", "1500", "reviveAmt"],
+        ["Porygon", "../porygon.png", "9999", "porygonAmt"]
+    ]
+}

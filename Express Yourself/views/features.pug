@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    ul
+        each item in featuresList.list
+            div(class='features_item')
+                li(id=item[0] class="ItemName") #{item[0]}
+                img(src=item[1])
+                div(class="price_statement")
+                    img(src="Pokedollar.png")
+                    p(class="ItemPrice") #{item[2]} 

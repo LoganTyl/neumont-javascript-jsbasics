@@ -1,0 +1,73 @@
+extends layout
+
+block content
+    div(class="content")
+        form(id='update' method='POST' action="/edit/"+account.id onsubmit="return checkUpdate()" class='form')
+            p Username:&nbsp;
+                input(type='text' id='usernameUpdate' name="username" value=account.username)
+            p Password:&nbsp;
+                input(type='text' id='passwordUpdate' name="password")
+            p E-mail:&nbsp;
+                input(type='text' id='emailUpdate' name="email" value=account.email)
+            p Age:&nbsp;
+                input(type='text' id='ageUpdate' name="age" value=account.age)
+            //- each item in config.questions
+            //-     p(id=item[0]) #{item[0]}
+            //-     select(name=item[2])
+            //-         option(selected=account.q1answer)
+            //-         each thing in item[1]
+            //-             option(value=thing) #{thing}
+            p(id=config.questions[0][0]) #{config.questions[0][0]}
+            select(name=config.questions[0][2])
+                each thing in config.questions[0][1]
+                    if thing==account.q1answer
+                        option(value=thing selected) #{thing}
+                    else
+                        option(value=thing) #{thing}
+            p(id=config.questions[1][0]) #{config.questions[1][0]}
+            select(name=config.questions[1][2])
+                each thing in config.questions[1][1]
+                    if thing==account.q2answer
+                        option(value=thing selected) #{thing}
+                    else
+                        option(value=thing) #{thing}
+            p(id=config.questions[2][0]) #{config.questions[2][0]}
+            select(name=config.questions[2][2])
+                each thing in config.questions[2][1]
+                    if thing==account.q3answer
+                        option(value=thing selected) #{thing}
+                    else
+                        option(value=thing) #{thing}
+            br
+            br
+            img(src=`http://api.adorable.io/avatars/face/${account.faceSettings[0]}/${account.faceSettings[1]}/${account.faceSettings[2]}/${account.faceSettings[3]}` id="editAvatar" name="editAvatar" class='avatarIMG')
+            br
+            br
+            p(class="avatar" ) Select Your Type of Eyes! 
+            select(name="eyes" id="eyes")
+                each thing in config.eyes
+                    if thing==account.faceSettings[0]
+                        option(value=thing selected) #{thing}
+                    else
+                        option(value=thing) #{thing}
+            p(class="avatar") Select Your Type of Nose!
+            select(name='nose' id="nose")
+                each thing in config.nose
+                    if thing==account.faceSettings[1]
+                        option(value=thing selected) #{thing}
+                    else
+                        option(value=thing) #{thing}
+            p(class="avatar") Select Your Type of Mouth!
+            select(name='mouth' id="mouth")
+                each thing in config.mouth
+                    if thing==account.faceSettings[2]
+                        option(value=thing selected) #{thing}
+                    else
+                        option(value=thing) #{thing}
+            p(class='avatar') Input a Hex Color!&nbsp;
+                input(class='colorInput' value=account.faceSettings[3] id='color' name='color')
+            div(id='regexResp')
+            //- p(class='avatar')
+            //-     input(type="submit" value="View Avatar" onchange="edit()")
+            p
+                input(type='submit' class='btn' value='Update')

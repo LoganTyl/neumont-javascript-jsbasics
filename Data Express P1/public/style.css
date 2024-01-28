@@ -1,0 +1,94 @@
+/* header {
+    text-align: center;
+}
+
+.editPage {
+    text-align: center;
+} */
+h1{
+    font-family: "Indie Flower", cursive;
+    color: #D9B573;
+    font-size: 70px;
+}
+body{
+    background-color: #A67C49;
+}
+#main{
+    font-family: 'Montserrat', sans-serif;
+    background-color:      #734D2D;
+    color: #E9D28D;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+    font-size: 40px;
+    padding: 10px;
+    border: 2px solid;
+    box-shadow: 
+    2px 2px #111,
+    4px 4px #222,
+    6px 6px #000,
+    8px 8px #000,
+    10px 10px #000,
+    12px 12px #000,
+    14px 14px #000,
+    16px 16px #000;
+}
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    color: #900905;
+    background-color: #FA739B;
+    text-align: center;
+    width: 90%;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 20px;
+    transition: ease-in-out 170ms;
+    background-color: #FA739B;
+    font-size: 40px;
+    border: 0px;
+    box-shadow: 
+    1px 1px #111,
+    4px 4px #222,
+    6px 6px #000,
+    8px 8px #000,
+    10px 10px #000;
+}
+a{
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: #900905;
+    color: #FA739B;
+}
+.inputBox{
+    margin:10px;
+    height: 30px;
+    width: 50%;
+}
+.content{
+    border-radius: 4px;
+    padding: 20px;
+    margin: 5px;
+    border: 1px solid;
+}
+.editPage {
+    text-align: center;
+}
+.dropdown{
+    width: 30%;
+    height: 30px;    
+}
+.signUpInput{
+    vertical-align: top;
+    padding: 10px;
+}
+canvas{
+    background-color: #eee;
+    margin: 10px;
+}
+#currentIcon{
+    width: 325px;
+}

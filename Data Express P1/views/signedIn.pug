@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    script(src="/charts.js")
+    img(id='currentIcon' src=`http://api.adorable.io/avatars/face/${account.faceSettings[0]}/${account.faceSettings[1]}/${account.faceSettings[2]}/${account.faceSettings[3]}`)
+    div(class="content")
+        canvas(id="chart0" width="450" height="430")
+        canvas(id="chart1" width="450" height="430")
+        canvas(id="chart2" width="450" height="430")
+        header
+            img(src="/img/potato.jpg" width="60%" height="40%")
+            br
+            a(class='editPage' href="/edit/"+id)
+                button(type="button" class="btn") Edit Your Information
+            br
+            br
+            a(href="/logout")
+                button(type="button" class="btn") Log Out
+            p=lastVisited

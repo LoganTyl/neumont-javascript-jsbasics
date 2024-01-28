@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        link(href='style.css', rel='stylesheet')
+        link(href="pokemart.jpeg",rel="icon")
+        title The PokeMart
+    body
+        header
+            nav
+                ul(id="menuNav")
+                    each item in config.menu
+                        a(href=item[1])
+                            div(class='config_item')
+                                li(id=item[0]) #{item[0]}
+        section
+            h1(id="pageTitle") #{title}
+            block content
+        footer
+        script(src="code_behind.js")

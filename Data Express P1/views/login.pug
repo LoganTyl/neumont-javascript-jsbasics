@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    div(class="content")
+        form(id='form' method='POST' action="/signedIn" onsubmit="return checkLogin()" class='loginPage')
+            p Username: <br/>
+                input(type='text' id='usernameLogin' name="username")
+            p Password:<br/>
+                input(type='text' id='passwordLogin' name="password")
+            p
+                input(type='submit' value='Login' class="btn")
+        a(href="/signUp" class="btn") Sign Up
+        a(href="/api" class="btn") Get API
+        //- a(href="/deleteAccounts" class="btn") Delete All Accounts
+        //- p
+        //- each item in accounts
+        //-     p #{item.id} -- #{item.username} -- #{item.password} -- #{item.email} -- #{item.age} -- #{item.q1answer} -- #{item.q2answer} -- #{item.q3answer}

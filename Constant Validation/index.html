@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Constant Validation</title>
+</head>
+<body>
+    <form name="POST" action="validForm.html" onsubmit="return checkSubmission()">
+        First name:<br>
+        <input type="text" id="first_name"><br>
+        <p id="first_name_error"></p>
+        <br>
+        Last name:<br>
+        <input type="text" id="last_name"><br>
+        <p id="last_name_error"></p>
+        <br>
+        Email:<br>
+        <input type="text" id="email"><br>
+        <p id="email_error"></p>
+        <br>        
+        Address:<br>
+        <input type="text" id="address"><br>
+        <p id="address_error"></p>
+        <br>        
+        City:<br>
+        <input type="text" id="city"><br>
+        <p id="city_error"></p>
+        <br>        
+        State:<br>
+        <input type="text" id="state"><br>
+        <p id="state_error"></p>
+        <br>        
+        Zip Code:<br>
+        <input type="text" id="zip_code"><br>
+        <p id="zip_code_error"></p>
+        <br>        
+        Phone Number:<br>
+        <input type="text" id="phone_number"><br>
+        <p id="phone_number_error"></p>
+        <br>        
+        Password:<br>
+        <input type="text" id="password"><br>
+        <p id="password_error"></p>
+        <br>        
+        Verify Password:<br>
+        <input type="text" id="verify_password"><br>
+        <p id="verify_password_error"></p>
+        <br><br>
+        <input type="submit" value="Submit" id="submitBtn">
+      </form>
+      <script src="validate.js"></script>
+</body>
+</html>

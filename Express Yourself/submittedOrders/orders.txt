@@ -1,0 +1,10 @@
+Name: e
+Address: e
+Phone Number: e
+Email: e
+Potion Amount: 0
+Full Heal Amount: 0
+Ultra Ball Amount: 0
+Revive Amount: 0
+Porygon Amount: 0
+-------------------------------------------------------
