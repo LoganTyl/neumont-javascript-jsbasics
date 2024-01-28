@@ -1,0 +1,4 @@
+when making new project: npm init
+installing node modules: npm install <>
+reinstalling node modules: npm install
+starting localhost: nodemon

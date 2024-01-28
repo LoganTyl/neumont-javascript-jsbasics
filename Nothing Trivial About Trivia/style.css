@@ -1,0 +1,84 @@
+html {
+    background-color: rgb(19, 49, 56);
+}
+
+#question, #feedback {
+    color: white;
+    font-size: 30px;
+    display: inline-block
+}
+
+#question{
+    font-size: 30px;
+}
+
+#feedback{
+    font-size: 20px;
+}
+
+#question_space{
+    display: inline-block
+}
+
+#feedback-container{
+    text-align: center
+}
+
+#question-container{
+    text-align: center
+}
+
+.dropdowns{
+    display: block
+}
+
+.choices-container{
+    text-align: center
+}
+
+#choices{
+    display: inline-block
+}
+
+#startDropDowns-container{
+    text-align: center
+}
+
+#startDropDowns{
+    display: inline-block
+}
+
+#startButton-container{
+    text-align: center
+}
+
+#startButton{
+    display: inline-block
+}
+
+#difficulty, #categories{
+    width: 400px;
+}
+
+#startRestartBtn{
+    display: inline-block
+}
+
+.btn {
+    background-color: rgb(100, 143, 209);
+    color: black;
+    text-align: center;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 30px;
+    width: 950px;
+    height: 30px;
+    cursor: pointer;
+    user-select: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+}
+
+.btn:hover {
+    background-color: rgb(100, 193, 209) !important;
+}
